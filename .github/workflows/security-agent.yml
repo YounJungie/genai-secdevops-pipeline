@@ -1,0 +1,37 @@
+name: GenAI Autonomous Security Agent
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  ai-security-triage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 1. Checkout Source Code
+      uses: actions/checkout@v3
+
+    - name: 2. Setup Python Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 3. Install Dependencies & SAST Tools
+      run: |
+        pip install bandit google-generativeai
+
+    - name: 4. Execute Autonomous AI Security Agent
+      env:
+        # Menghubungkan API Key rahasia yang disimpan di GitHub Secrets
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        python triage_agent.py
+
+    - name: 5. Archive Security Report Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Security-Audit-Report
+        path: SECURITY_AUDIT_REPORT.md
