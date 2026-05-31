@@ -64,12 +64,6 @@ graph TD
 🛠️ Installation & Setup
 1. Repository Configuration
 
-Clone this repository to your local testing environment:
-Bash
-
-git clone [https://github.com/YounJungie/genai-secdevops-pipeline.git](https://github.com/YounJungie/genai-secdevops-pipeline.git)
-cd genai-secdevops-pipeline
-
 2. GitHub Secrets Provisioning
 
 To enable cloud execution, you must supply the LLM orchestration layer with valid API tokens:
