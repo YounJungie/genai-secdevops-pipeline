@@ -28,6 +28,7 @@ graph TD
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style E fill:#f96,stroke:#333,stroke-width:2px
     style I fill:#9f9,stroke:#333,stroke-width:2px
+```
 📝 Step-by-Step Execution
 
     Continuous Integration Trigger: Every code push or pull request to the main branch automatically provisions an isolated Ubuntu runner environment via GitHub Actions.
