@@ -5,7 +5,7 @@ import os
 from google import genai
 
 # Membaca API Key langsung dari string (Aman untuk testing lokal malam ini)
-API_KEY = "AQ.Ab8RN6L2wiGB1VReFbBDu4142d5efuyIxLzup5aMMg-8HFVkhA"
+API_KEY = "GEMINI_API_KEY"
 
 if not API_KEY:
     print("[-] ERROR: API Key Gemini tidak ditemukan!")
