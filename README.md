@@ -15,9 +15,9 @@ graph TD
     C -->|Generates JSON Vulnerability Log| D[🧠 Step 2: Execute triage_agent.py]
     
     subgraph AI Security Agent Processing
-    D -->|Injects Security Context + Prompt| E{🤖 Google Gemini 2.5 API}
-    E -->|Analyze Risk & Eliminate False Positives| F[📝 Status: True/False Positive]
-    E -->|Generate Secure Remediation Patch| G[💻 Secure Coding Solution]
+        D -->|Injects Security Context + Prompt| E{🤖 Google Gemini 2.5 API}
+        E -->|Analyze Risk & Eliminate False Positives| F[📝 Status: True/False Positive]
+        E -->|Generate Secure Remediation Patch| G[💻 Secure Coding Solution]
     end
 
     F --> H[📄 Generate SECURITY_AUDIT_REPORT.md]
@@ -28,8 +28,7 @@ graph TD
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style E fill:#f96,stroke:#333,stroke-width:2px
     style I fill:#9f9,stroke:#333,stroke-width:2px
-
-   📝 Step-by-Step Execution:
+📝 Step-by-Step Execution
 
     Continuous Integration Trigger: Every code push or pull request to the main branch automatically provisions an isolated Ubuntu runner environment via GitHub Actions.
 
@@ -67,7 +66,7 @@ graph TD
 Clone this repository to your local testing environment:
 Bash
 
-git clone [https://github.com/YounJungie/genai-secdevops-pipeline.git](https://github.com/YounJungie/genai-secdevops-pipeline.git)
+git clone https://github.com/YounJungie/genai-secdevops-pipeline.git
 cd genai-secdevops-pipeline
 
 2. GitHub Secrets Provisioning
@@ -104,6 +103,7 @@ Markdown
 * **File:** `app.py` | **Line:** 14
 * **AI Analysis:** TRUE POSITIVE. The source code contains a static string assignment assigned to a database connection parameter.
 * **Remediation Patch:**
+
 ```python
 # SECURE REFACTORING:
 import os
