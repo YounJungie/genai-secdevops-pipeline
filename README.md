@@ -29,7 +29,7 @@ graph TD
     style E fill:#f96,stroke:#333,stroke-width:2px
     style I fill:#9f9,stroke:#333,stroke-width:2px
 
-📝 Step-by-Step Execution:
+   📝 Step-by-Step Execution:
 
     Continuous Integration Trigger: Every code push or pull request to the main branch automatically provisions an isolated Ubuntu runner environment via GitHub Actions.
 
@@ -63,6 +63,12 @@ graph TD
 
 🛠️ Installation & Setup
 1. Repository Configuration
+
+Clone this repository to your local testing environment:
+Bash
+
+git clone [https://github.com/YounJungie/genai-secdevops-pipeline.git](https://github.com/YounJungie/genai-secdevops-pipeline.git)
+cd genai-secdevops-pipeline
 
 2. GitHub Secrets Provisioning
 
@@ -102,3 +108,5 @@ Markdown
 # SECURE REFACTORING:
 import os
 db_password = os.environ.get("DB_PASSWORD")
+
+Developed with an adversarial mindset for modern DevSecOps integration.
