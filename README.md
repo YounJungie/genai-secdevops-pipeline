@@ -117,9 +117,9 @@ Developed with an adversarial mindset for modern DevSecOps integration.
 ## 📸 Local Execution Proof (PoC)
 
 <details>
-<summary><b>💡 Klik di sini untuk melihat Log Eksekusi CLI di WSL Terminal</b></summary>
+<summary><b>💡 Click here to view the CLI execution log in the WSL Terminal</b></summary>
 
-Berikut adalah bukti otentik saat Agen Keamanan SecDevOps dijalankan secara lokal di lingkungan pengujian (WSL Ubuntu):
+Here is authentic evidence of the SecDevOps Security Agent running locally in a test environment (WSL Ubuntu):
 
 <img width="1172" height="207" alt="Screenshot 2026-05-31 222319" src="https://github.com/user-attachments/assets/31812b37-c544-43a9-b315-8d58fc126a66" />
 
